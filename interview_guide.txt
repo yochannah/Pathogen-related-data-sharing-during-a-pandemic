@@ -1,0 +1,13 @@
+%(This is just the interview guide for information, need to write it up more concisely)
+\begin{enumerate}
+\item Tell me a little about the data sources you’ve been working with so far – have any been restrictive or hard to access?\begin{enumerate}
+\item What did you do when you encountered the access restriction?
+\item Did you ever consider going to another source, or encouraging data creators and curators to share their information somewhere less restrictive?
+\item Did others you work with share your views and opinions? Can you provide any examples?
+\end{enumerate}
+\item What about good experiences – are there any data sources that are exemplary? \begin{enumerate}
+\item What did they do  right?
+\item Was there anything they could do better?\end{enumerate}
+\item If you could design your own “dream” COVID data source, would there be anything else you’d like to see?
+\item Are there any ethical issues you’re aware of, or have considered, with regards to this data sharing? 
+\end{enumerate}
