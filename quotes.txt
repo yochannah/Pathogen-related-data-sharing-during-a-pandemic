@@ -1,0 +1,99 @@
+"It was only on an off-chance in perusing through these documents on a Sunday evening. I was having a chat with my colleague,  and we're both going 'what else exists in this data dump that we could do something useful with?' when we stumbled across [this datasource]."
+
+"They're literally just sorted by date. PDF only. No underlying data, and unless you know what the [document] was about, it is impossible. If you say 'what does it say about travel restrictions?', unless you know when they met to discuss that, good luck finding it without literally going through 300 PDFs."
+
+"There are lots of viruses and sequences that fall under the radar [...] when you don't have the data in a central repository. So that's been kind of the linchpin. A lot of people are working on, probably the same viruses, and it's not that we don't want to cite them, it's just when you're doing a high throughput analysis it's hard to track down every single case and really do your due diligence that someone didn't say 'oh this library actually has this sequence, and we named it.'"
+
+"Unless you know things are available, you can't ask for them, so it's not obvious that you can get data by sex and age from the dashboard. [...] I've got this document I have collected over the last 18 months, and it's just links. It's got everything. New cases types of test, variants of concern, age profiles, countries, contact tracing data, international comparisons, positivity rates, public health. It's a 10 page document now, and I still add new things to it. What's frustrating is that you kind of have to know where these things are, otherwise you can't really access it. Although it's all public data, it is not accessible, not really, right?"
+
+"It's going to sound obvious, but more metadata would be great. Every time I need to transfer between [two tables] I spend longer than I should searching the website. It's surprising how easy it is to lose one of these tables, and you can't find it again because they have funny names.' 
+
+"We've allocated for one year, something like £30,000 pounds to pay to get data extracts, which just means that when we're an unfunded volunteer effort - we can't. Whose grant does that come out of? […] I think it's just a business model. That's part of [government agency], that's how they pay their bills, to maintain their servers."
+
+"I think Three in Ireland shared their data initially for free, and then, after a couple of months, they charged cost for that content, to collect and publish datasets and share this data with the central government. [...] it's not expensive. Low four figures or less, for complete access. Whereas O2 and Telefonica expected, I think, upward of £10,000 pounds for the same data and they offered no discounts [...] they basically said 'look on our website: we haven't changed anything during the pandemic, you've always been able to pay for the this data with ten grand.'"
+
+"Even people who I would say, want' to do this [data sharing] - they're just not going to do it - institutional momentum, right? 'that's not how things are done and therefore that's not how we're going to do it', and I feel like that's what's carried over from the 80s and 90s in this field, and they just never stopped to really reflect on this, 'Is this the way that we really want' to do things moving forward?'' 
+
+"If the person who is overall responsible for organizing the whole thing doesn't seem in general to be concerned with open research or open data, or anything like that [...] at the point where there's a supervisor who's saying 'this is how it's done' or not saying how it's done... I guess you don't want to step out of line."
+
+"I would really like to use Facebook data for that, but I can't get my university to sign the agreement because it gives Facebook the right to use their branding in advertising."
+
+"If the mechanism for accessing data is 'email someone and wait for them to respond', then if you don't ideally have both professor and OBE involved in your name, you know you're going to struggle."
+
+"We got lucky - we were grandfathered in because we sit within an adjacent group to the person who sat on the original […] committee. There was no formal application process."
+
+"Essentially, you had a treasure trove of information that was not at all mapped to each other, that a lot could have been done with, which was being heavily access managed and not at all curated."
+
+"Having access to highly protected things, like healthcare data, for half of my work is bizarre, because for example, we need to know what proportion of people who enter the hospital over the age of seventy dies? What is that rate? I know it, because I generated it for one of my models, but I can't use it for the other model."
+
+
+"[There are] many pages of supplementary where we have documented everything we've done, because what's amazing is that I don't think the way [a healthcare organisation] calculates those numbers is necessarily right. But given that we're reverse engineering, it wasn't something we could call out, because we don't know the definition, but we're like 'this doesn't make sense.'"
+
+"It is in an Excel sheet, which is kind of fine, except [...] the table appears partway down the sheet, with some explanatory text, and the order of the sheets changes, sometimes. [...] It just has a series of different tables copied one after the other in one CSV file, and you just have to know which line the table you want starts on, so if they ever reorder them it completely breaks."
+
+"The other thing that this pandemic revealed [...] is that our data infrastructure just is not up for this kind of task, at least in the health sector. [...] I recall a case from from the UK, where essentially the government was reporting [...] most of the cases as an Excel sheet and at some time you know an Excel sheet was not going to be enough. I mean maybe a different kind of database could have done it. And you wonder like 'well, hang on, I mean this is the way we're counting these in one of the most advanced countries on earth? So, well, what's up?'"
+
+"Guides on how to do that from the government come with a big warning sheet saying you should under no circumstances use this for any software that informs policy, which is not very helpful... because we have to."
+
+"What I don't want to see happen is to create like a multi tiered system or a system where data is not centralized, because that's the nightmare of bioinformatician, where you have to go to some private database for these sequences, and then you go to the Genbank for these sequences and then cross referencing them, where are they duplicated..."
+
+"[The] server just terminates at some point, and your curl command just hangs for hours or days. I mean, we had no workarounds in place [...], and resubmit data hundreds of jobs a hundred times until they succeed."
+
+"If you have a pandemic, and if you have data sets that […] thousands of researchers on a daily basis want to use, or need to use, to create dashboards - our current infrastructure was struggling."
+
+"The data came in a very basic format and we found a lot of issues. We spent a lot of time, in fact almost about a year, just to clean up the data.' 
+
+"The GISAID database which is containing the SARS-CoV-2 sequences is blocked off, and it's kind of not worth the hassle to use that data, even though it might be informative, because if we use it we then can't share our data, which is a derivative."
+
+"One of the things we care about, is not sharing just' the data itself, but also all the code and scripts and stuff that we use to analyze the data and produce the final output. But for the parts where we're building trees to compare the final genetics of our isolates versus the world's, we can't actually bundle that data together. The GISAID data that is used as the context is not distributable, and so that's that's where there's kind of this gap between our ideal of being able to to provide everything bundled together. "
+
+"I spoke to one person from local government who just went 'we're just not going to use it then' - there's just no value to it if you're going to provide that amount of restriction."
+
+"A big battle that we had with [the data creator] was that [the data user] had made an agreement that, before anything was published, it would be run past them and so as we put our  preprint on [a preprint server], [the data user] let [the data creator] know, and there began a little six week ordeal where we would just go back and forth being like 'can you please sign this off' and they'd be like... they didn't even respond, and then after six weeks, the only reason we got signed off was because they released a portion of the [dataset] into the public domain as they normally would."
+
+"I think they've managed to publish a few papers, but they're always kind of outdated because it takes so long for [governmental body] to say yes. And they weren't allowed to preprint them, so I know that that has been quite frustrating and would have been actually really important data to help shape how people talk about COVID-19 and adherence.' 
+
+"A bit of a snag with [a genomic sequence database]. [The database] was like 'Oh, we'll take the sequences, but then they're going to be classified as third party assemblies', which means that they're not BLASTable, they're not really essentially useful in any real way. And so now I need to try to convince [the database] that 'no, these are viral genomes' - they might not be complete in every case, but these are very distinct viruses and there is no representation in [the database]."
+ 
+"Both go hand in hand, and the challenge is - and I don't have a good answer for that - how can we keep good metadata, but still make it easy to upload? [...]  We are now at a stage where we have an Excel table, so people can use their tools that they know and put data in, and then we upload it with an Excel table. But still, it still can be more complicated than [another database that the participant expressed quality concerns with]. So yes, there's a trade off. But I guess, if we do our best, and if we make this as simple as possible, people will hopefully do the extra effort of the metadata."
+
+"All this data is manually updated by the residents who ran helter-skelter across the various COVID-19 wards, and whenever they get time, they do it, so we can not expect much. But fairly by and large, it's okay."
+
+"I would have loved the other stuff, but everything they had of value was being either guarded, or people were just too focused on doing the work to be able to facilitate others getting access."
+
+"Lots of people were working flat out and it's just a time and resources barrier for being able to… lots of people in different bodies were working at capacity, and therefore just did not have time to do extra stuff."
+
+"[They were] given a real big data set and it sat untouched by the people on the [analysis] team. It was really exciting kind of access and they could have probably done quite a lot with it, but they were just working on the things that they always worked on in a way that they always worked on. They didn't have time to go 'Okay, how do we actually integrate this into the data we already collect in the dashboards, that we already produce?'"
+
+"They don't exactly understand why they have to, and felt lost and even misunderstood - like a reaction of 'come on, I have millions of things to do before, and you came and are telling me that I'm not doing my work well', you know? No, because I'm gathering data in excel spreadsheets..."
+
+"The Craig Venter Institute had tons of Sanger sequencing on coronaviruses, and in January as soon as the pandemic started, they released everything into the SRA, and they didn't make a big deal about it or anything - they were like 'here are all these coronaviruses that we've had sitting in our database.'"
+
+"They have shared data that usually you would need a very lengthy agreement to get. You do have to sign the agreement, but it's like 'tick this box on one form.'"
+
+"When the numbers are moving fast, they send us updates like two or three times per day. This is really nice, and we can actually have an idea of what's going on, like on a daily basis."
+
+"Trying to bring together two complete electronic health record data sets in OMOP [an electronic health record data standard] is a non trivial task, I don't know of anyone that had actually done it prior. [...] What it's attempting to do is to create an end to end the solution, where from the moment you interact with acute services, to when you end up in critical care, to your discharge [...] every person that interacts through the NHS 111 [National Health Service health advice hotline] but then went to A\&E and ended up in critical care, then got discharged - and being able to match it to ONS [Office of National Statistics] outcomes, so that you know, actually, who died, not just the partial observation that we get in medical records - that would be the dream, but I think that's everyone's dream."
+
+"A good example for me in terms of data sets - the Thousand Genomes data set is a really nice one because the data is completely open.  We now have high-quality versions of that data set that we can host on cloud [...] one of the nice aspects is you can find mirrors on various platforms, so that regardless of what infrastructure you're using, it's usually easy to access it and not have to do a lot of work to get a copy, because as these data sets get bigger and bigger you really start running into limitations of how reasonable, how feasible, it is to actually get a copy for yourself."
+
+"Genbank, RefSeq have been the anchors for this project, and that's just purely based on their availability policy. I can grab everything, I can search it, I have programmatic access to get the right data. Which is fundamental, because when you're dealing with 40,000 entries you can't manually go through this much data. I mean, we still have to go through the data, but you can't slice it efficiently without programmatic access, right?"
+
+"All the data ends up being migrated into a data warehouse where you can predict the URL of every single object, as long as you know the accession [...] that not only allowed us to build a website around database and data, but that also lets anyone access the data that they want just by typing in the URL."
+
+"Maybe such Open Source solutions could be made available, so others could implement at no cost, and this can become more commonplace, so analysis could be done and more can be extracted from that data to bring benefit back to the patients from whom the data came."
+
+"To generate synthetic data, to generate fake data, there are also starting to be tools in place, but there are no standards yet. This is another blocker, because if you need to produce fake data, you have to figure out how. You don't have a protocol or procedure."
+
+"I think annotations of data sets are missing [...] third party annotations need to increase here. [...] 'We figured out that these hundred accession numbers are [incorrect] - the quality is not suitable for downstream experiments', 'I have my doubts that this is actually COVID-19' - these kind of things."
+
+
+"[It would be useful if] machines know what part of the dataset you have access to or not. For example, what kind of biases are supposed? If you don't have access to one hundred percent of the data, if you only have access to 70\%?"
+
+"With a few variables, you can do so much, and with more variables, you can, of course, do a lot more. But to me, my main pain point was this integration, harmonization and worry about quality. [...] The last thing you want is to publish something, and it's not interpreted correctly or it's lacking, or we missed something. That scares me, and so my dream data would be quality in terms of well-done integration, harmonization, standardization, of the data and if that's done, even if small, I would take it, and be happy with that."
+
+"I try to steer away from examples that kind of held up as an 'ideal use case', because those don't tend to exist."
+
+"So [after] slightly more than a year, we've gone through the manual [data], and we've also gone through the automated [data]. We have a tool now and we have the data that goes through the computational pipeline. I think there's a big difference in the quality of that data compared to the original. In fact, we also identified issues that were maybe not obvious unless you had done those detailed analyses. So all in all, I think this was a good experience and a good exercise. The teams are very happy that there's actually a tool [...] they're excited to be able to use this tool for their other research interests."
+
+"The digitalisation of government services, has been a long and overdue agenda here in [our region]. We say all governments to some degree, managed to improve at least a bit, the way they engage online because of the pandemic."

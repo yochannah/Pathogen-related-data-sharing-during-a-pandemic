@@ -62,20 +62,34 @@
 %TC:ignore
 \abstract{
 %250 words max - Abstracts should be 250 words. It must be able to stand alone and so cannot contain citations to the paper's references, equations, etc. An abstract must consist of a single paragraph and be concise. Because of online formatting, abstracts must appear as plain as possible.
-In 2020, the COVID-19 pandemic resulted in a rapid response from governments and researchers worldwide. As of May 2022, over 6.7 million people died as a result of COVID-19 and over 660 million confirmed cases, with many survivors going on to experience long-term effects weeks, months, or years after their illness. Despite this staggering toll, those who work with pandemic-relevant data often face significant systemic barriers to accessing, sharing or re-using this data. In this paper we report results of a qualitative study, where we interviewed data professionals working with COVID-19-relevant data types including social media, mobility, viral genome, testing, infection, hospital admission, and deaths. These data types are variously used for pandemic spread modelling, healthcare system strain awareness, and devising therapeutic treatments for COVID-19. We identify four sequential barriers a researcher may encounter: Knowing data exists, being able to access that data, data quality, and ability to share data onwards. A fifth barrier, human throughput capacity, is present throughout all four stages. Examples of these barriers range from challenges faced by single individuals, to non-existence of historic mingling / social distance laws, and up to systemic geopolitical data suppression. } 
+In 2020, the COVID-19 pandemic resulted in a rapid response from governments and researchers worldwide - but information sharing mechanisms were sometimes sub-optimal. At the time of writing in 2023, while spread tracking has largely ceased, cumulative confirmed deaths approach 7 million, and cumulative excess death estimates range from 18 to 32 million. Modern vaccines reduce severity, but immunity wanes fast, and the virus mutates so swiftly that some individuals have contracted multiple cases. All observed infection cases - even ones where the acute phase is “mild” - result in invisible cardiovascular damage, even in previously healthy people, and repeated infections increase risk of the long-term consequences known as “Long COVID”. 
+
+Despite this staggering toll, those who work with pandemic-relevant data have faced significant systemic barriers to accessing, sharing or re-using this data. In this qualitative study we interview data professionals working with COVID-19-relevant data types, analyse our interview data for content and themes, and report the barriers, successes, and opportunities for improvement. 
+
+We identify four sequential barriers a researcher may encounter: Knowing data exists, being able to access that data, data quality, and ability to share data onwards. A fifth barrier, human throughput capacity, is present throughout all four stages. Examples of these barriers range from challenges faced by single individuals, to non-existence of historic mingling / social distance laws, and up to systemic geopolitical data suppression. } 
 
 \begin{policy}
 % 120/120 words - Provide a 120 word statement here that summarises the significance of the work for policymakers, written at a level understandable for a broad audience...
-Preventing the spread of a global pandemic requires effective, swift access to high-quality and up-to-date data. Despite this urgency, non-private and semi-private data are often stored behind access-controlled systems that prevent effective re-use, and human time constraints for access requests result in bottlenecks, especially in high-demand pandemic-instigated scenarios. Even when data can be accessed, poor quality often makes it difficult or impossible for researchers to effectively use this data, and may necessitate lengthy workarounds or "best guesses" to create policy-informing computational models. To avoid costly death tolls in future epidemics, we must implement effective computational data-sharing pipelines and permissive re-use policies before another outbreak occurs. This paper provides new information that can be used to develop data-sharing policies that will support rapid responses in future pandemics.
-
-
+Preventing the spread of a global pandemic requires effective, swift access to high-quality and up-to-date data. Despite this urgency,  data are often stored behind access-controlled systems that prevent effective re-use, and human time constraints for access requests result in bottlenecks, especially in high-demand pandemic-instigated scenarios. Even when data can be accessed, poor quality often makes it difficult or impossible for researchers to effectively use this data, and may necessitate lengthy workarounds or "best guesses" to create policy-informing computational models. To reduce costly death tolls in the future, we must implement effective computational data-sharing pipelines and permissive re-use policies. This paper provides new information that can be used to develop data-sharing policies that will support effective responses in future pandemics.
 \end{policy}
 %TC:endignore
 \end{Frontmatter}
 
 
 \section{Introduction}
-Barriers to effective use of data to inform policy are not new, but became noteworthy during a global pandemic that has already infected over 500 million and directly taken more than 6 million lives (\cite{owidcoronavirus}). We discuss consecutive systemic barriers professionals encounter when working to address the effects of the pandemic, with intent to inform policy and create effective sharing mechanisms before another such deadly event occurs. These barriers fall into five main categories, four of which are sequential: Knowing data exists, accessing that data, being able to understand and use the data, and being able to share your data and analyses in an online repository so others can re-use them. Throughout this, a fifth barrier is interwoven: Human throughput capacity, which may be stretched even before acute stress periods such as a pandemic.
+Barriers to effective use of data to inform policy are not new, but became noteworthy during a global pandemic that has already infected hundreds of millions (\cite{owidcoronavirus}). Building on data-sharing challenges we encountered as scientists practicing in our own fields, we designed a qualitative remote interview-based study to investigate these barriers. 
+
+After exploring literature in section 3, we present methods in section 4, and in section 5 we share a comprehensive list of the consecutive systemic barriers professionals encounter when working to address the effects of the pandemic. This list is presented with intent to inform policy and create effective sharing mechanisms before another such deadly event occurs. 
+
+Whilst this research was intended specifically to look at non-private data, such as hospital bed capacity, or viral genomes,  many participants had experience with private data types as well - and it quickly became clear throughout the study that most of the barriers we identified were common to both private and non-private data types.  Much of the evidence we present is in the form of quotes and use-cases of the barriers our participants encountered, and given the sensitivity of topics such as data privacy (section 5.1.2) and governmental data suppression (section 6.1), all participants and quotes are anonymous. 
+
+The barriers reported fall into five main categories, four of which are sequential: Knowing data exists, accessing that data, being able to understand and use the data, and being able to share your data and analyses in an online repository so others can re-use them. Throughout this, a fifth barrier is interwoven: Human throughput capacity, which may be stretched even before acute stress periods such as a pandemic.
+
+This study focused specifically on recruiting people who wish to share barriers that they had encountered. Whilst it is not the primary focus of the study, we also discuss common themes and "wishlist" items that our participants shared, when describing what a good - or even "dream" data source might look like (section 5.3).
+
+In the discussion (section 6), we highlight three key areas of note. These are: the governmental tension between following science and controlling pandemic narrative; equity concerns as those with the least resilience are also the worst affected; and the need for structured computationally-readable temporal metadata for legal rulings such as COVID social distancing requirements. 
+
+Finally, we conclude the paper with a short summary and call to action in section 7. 
 
 \section{Research Question}
 % see interview guide.txt for interview question set
@@ -137,7 +151,7 @@ Interviews were carried out in two rounds, and all participants who applied to p
 
 Round-one (July-September 2020 and March 2021) recruitment was targeted at bulk-emailed mailing groups and slack channels, with additional recruitment via social media (Twitter). No potential participants were approached directly individually, and everyone who volunteered to participate was accepted into the study.  
 
-Due to the limited global spread of the round-one sample, we initiated a second round of recruitment. Round-two (July-September 2022) recruitment was more directly targeted towards specific individuals who had domain experience in non-private data, and/or were based in continents and countries that were previously not represented in our sample. Round-two participants were approached via instant messaging and email. 
+Due to the limited global spread of the round-one sample, we initiated a second round of recruitment. Round-two (July-September 2022) recruitment was more directly targeted towards specific individuals who had domain experience in non-private data, and/or were based in continents and countries that were previously not represented in our sample. Round-two participants were approached via instant messaging and email. Due to the low level of response in round-one, in round-two, we did not focus on any specific domain beyond experience of working with COVID-19 data in some way, resulting in the sample domains described in results section 5.1.
 
 \subsection{Data gathering and analysis}
 
@@ -312,9 +326,12 @@ Vaccine, hospital, and COVID spread data in particular are data types that were 
 
 \subsubsection{Sampling challenges and limitations}
 
-All participants who reached out to participate in the study were accepted, regardless of background, which resulted in a population that was skewed towards higher-income European and North American countries. Ideally sampling would have been more evenly balanced across continents, cultures, and expertise domains. Because of the small sample size, we did not segregate the analysis by any of these features.
+This study is not intended to be generalisable and comprehensive, but instead it is exploratory, designed to shed light on areas for potential future research. 
+
+All participants who reached out to participate in the study were accepted, regardless of background, which resulted in a population that was skewed towards higher-income European and North American countries. Ideally sampling would have been more evenly balanced across continents, cultures, and expertise domains. Because of the small sample size, we did not segregate the analysis by any of these features. 
 
 We speculate that there may be several possible reasons for the sample distribution:
+
 \begin{enumerate}
 \item \textbf{Recruitment methods}: Initially ethical consent for this study was granted on the condition that no individuals were approached directly to participate, as this direct approach may have seemed too coercive. Whilst we emailed international mailing lists, Slack groups, and had thousands of engagements with recruitment tweets, uptake was still very poor. Round two had a much higher uptake rate, after an amendment to the ethics plan was approved which allowed researchers to directly approach potential participants - but was then limited to targeted individuals within the researchers' networks. 
 \item \textbf{Time constraints}: Several potential participants expressed interest in participating but did not ultimately sign up or attend the interview slot, and one participant was originally contacted during round one but eventually only signed up to participate in round two, citing extreme busyness. Given that people who have expertise in pandemic-related data sharing were generally involved in pandemic response, it seems likely that many potential participants self-selected out of participation due to high workload.
@@ -637,7 +654,7 @@ The need for complete datasets and contextual metadata in private records presen
 
 Getting as complete a picture as possible of data and its context is imperative if data analysts are to create valid interpretations. Existing literature shows that researchers may be reluctant to share their data unless it was accompanied by contextualised metadata, for fear of their data being misinterpreted  (\cite{datasharing_rcts}, \cite{Yimei_Zhu_Open_access_in_uk}, \cite{empirical_datasharing_plos}). Despite this, a recurring theme in many of the data-use barriers (Barrier 3) was that contextual information may be missing from raw data sets, possibly due to lack of time and resources to create the context (Barrier 5). 
 
-\subsection{Following the science: To be effective, policy \textit{must} be informed by evidence}
+\subsection{Geopolitical data suppression, or following the science? To be effective, policy \textit{must} be informed by evidence}
 
 An oft-cited pandemic mantra is "follow the science". This assertion perhaps lacks the nuance to recognise that many scientific pandemic responses will require trade-offs between different pressures and needs, but one thing is clear nevertheless: without transparent and effective sharing of pandemic related data, it becomes highly challenging to follow the science, as science will be missing a significant part of the picture. 
 
@@ -663,7 +680,7 @@ government.}
 
 A careful implementation of this technique could be immensely powerful, enabling computational spread modellers and policy makers to collaborate on powerful computational pathogen spread models. These models could effectively explain and understand previous pandemic data whilst also predicting the effects of different pathogen-related interpersonal mingling laws by updating the legal parameters in a test environment and allowing this to feed into existing computational models automatically. Rapid feedback loops between existing data and potential outcomes will save lives, reduce long-term disability, and reduce undesirable economic consequences. 
 
-\section{Conclusion}
+\section{Conclusion and future work}
 A famous adage about investing in the future is that the best time to plant a tree is twenty years ago; the second-best time is now. Many of the barriers participants reported might have been mitigated or reduced, had measures around data sharing and data access been implemented \textit{before} a public health crisis put significant pressure on our existing healthcare, health surveillance, and research systems. Whilst we can not collectively go back and put better data sharing systems in place, we can use the lessons from this pandemic to prepare better for future waves and for other similar crises. 
 
 Data-finding, access, use, sharing, and re-sharing barriers may occur sequentially rather than concurrently, delaying useful responses to urgent health emergencies. Data access requests and grant applications typically turn around in weeks or months. If a pandemic modeller must first apply for a grant to purchase access to data, and only later request access to the data \textit{if} funding is approved, one or many pandemic waves may pass before researchers can create realistic prediction models and recommended mitigation acts. 
@@ -671,6 +688,10 @@ Data-finding, access, use, sharing, and re-sharing barriers may occur sequential
 Governments and research institutes worldwide are recognising the need for better data-related infrastructure. Recent examples of this are the FAIR COVID-19 data recommendations for a coordinated response by \cite{FAIR_data_for_a_coordinated_COVID-19_response},  and the Goldacre review (\cite{goldacre_review}), which cites cultural, funding, technical, and privacy-aware recommendations for creating more effective healthcare-related data infrastructure. Implementing report recommendations such as these would dismantle many of the barriers found in this research, and improve the lot of healthcare research and outcomes significantly.
 
 Whilst many of the barriers we discussed throughout this paper are known and supported by existing data sharing and data standards literature and calls for reform, this paper highlights specifically how they apply to the specific crises of pandemics and epidemics. In particular, the need for machine-readable temporal context for legal movement restrictions and geographical data files represents a new and meaningful contribution to existing knowledge. Similarly, it is important to draw attention to the fact that data are still hidden for the sake of political gain, even in a global and long-term humanitarian crisis. 
+
+This study was carried out during the depths of lockdowns and early COVID-19 vaccine rollouts. As of late 2023, transmission tracking has largely ceased, and mitigation measures have largely disappeared globally. The vaccine prevents the most severe illness, but immunity wanes swiftly, and the virus mutates swiftly enough that some individuals have had two, three, or more cases of the virus (\cite{collaboratory_burden_2022}). All observed infection cases - even ones where the acute phase is “mild” - result in invisible cardiovascular damage, even in previously healthy people, and repeated infections increase risk of the long-term consequences known as “Long COVID” (\cite{davis_et_al}). COVID-19 is simultaneously a serious public health crisis, likely to increase the levels of long-term disability, yet also being ignored by governments, health policy, and the populace as “over”. 
+
+All this suggests that worldwide, nations do not attempt to “follow the science”, as some may have previously claimed. Further research in the area of systemic barriers and data quality control might be useful. Given that we already have a large amount of scientific evidence that is not being acted upon, however, we would argue that the most effective future work here might be policy work. Research on real-world problems seems to be of little point if the knowledge is not used to create real-world solutions. 
 
 The human cost of COVID-19 so far has been staggering. If we wish to ensure that we are in a position to mitigate future epidemics and pandemics, we must collectively dismantle systemic barriers, and build policies which not only enable efficient re-use of non-private data, but also ensure the data itself is intentionally designed to be accessed computationally with a minimum of human input, reducing costly errors and deadly bottlenecks to informed decision making. 
 
@@ -682,7 +703,7 @@ This paper has been deposited on arXiv as a preprint, DOI: 10.48550/arXiv.2205.1
 
 A preliminary version of this research was presented at Data for Policy 2021 as an extended abstract, DOI: 10.5281/zenodo.5234417. 
 
-Yo Yehudi would like to thank Kirstie Whitaker for study design and ethics support, and the open science, open data, and Open Life Science community in particular for helping to spread word and recruit for the study.
+Yo Yehudi would like to thank Kirstie Whitaker for study design and ethics support, and the open science, open data, and OLS community in particular for helping to spread word and recruit for the study.
 
 \paragraph{Competing Interests}
 None
