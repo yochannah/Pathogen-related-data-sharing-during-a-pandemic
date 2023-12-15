@@ -147,12 +147,16 @@ Similar principles have been described for other data-relevant domains, such as 
 \section{Methods and data used}
 To gain nuanced understanding of the barriers to data access, sharing, and re-use, we conducted a qualitative study, interviewing professionals who work with COVID-19 related data. This study was approved by the University of Manchester Department of Computer Science ethics panel, original approval review reference 2020-9917-15859 and amendment approval reference 2021-9917-19823. 
 
+A detailed interview guide and study protocol is available on protocols.io for re-use (\cite{covid_study_protocol}).
+
 \subsection{Recruitment}
 Interviews were carried out in two rounds, and all participants who applied to participate were accepted, resulting in fifteen completed interviews. 
 
-Round-one (July-September 2020 and March 2021) recruitment was targeted at bulk-emailed mailing groups and slack channels, with additional recruitment via social media (Twitter). No potential participants were approached directly individually, and everyone who volunteered to participate was accepted into the study.  
+Round-one (July-September 2020 and March 2021) recruitment was targeted at bulk-emailed mailing groups and slack channels, with additional recruitment via social media (Twitter). No potential participants were approached directly individually, and everyone who volunteered to participate was accepted into the study. Areas approached were primarily COVID-19 hack events, open data communities, and bioinformatics / biology communities. 
 
-Due to the limited global spread of the round-one sample, we initiated a second round of recruitment. Round-two (July-September 2022) recruitment was more directly targeted towards specific individuals who had domain experience in non-private data, and/or were based in continents and countries that were previously not represented in our sample. Round-two participants were approached via instant messaging and email. Due to the low level of response in round-one, in round-two, we did not focus on any specific domain beyond experience of working with COVID-19 data in some way, resulting in the sample domains described in results section 5.1.
+Due to the limited global spread of the round-one sample, we initiated a second round of recruitment. Round-two (July-September 2022) recruitment was more directly targeted towards specific individuals who had domain experience in non-private data, and/or were based in continents and countries that were previously not represented in our sample. Round-two participants were approached via instant messaging and email. 
+
+Due to the low level of response in round-one, in round-two, we did not focus on any specific domain beyond experience of working with COVID-19 data in some way, resulting in the sample domains described in results section 5.1.
 
 \subsection{Data gathering and analysis}
 
@@ -196,9 +200,9 @@ When writing, quotes are in some cases lightly paraphrased to replace identifyin
 To mitigate against the potential re-identification of the individuals whose data we share, we have created multiple separate tables for datapoints such as location, occupation, and domain expertise. For example, whilst we might share a table of occupations of participants, and separately share a list of countries where they come from, we never link occupation and physical location data of participants in the same table, as a combination of specific datapoints may be sufficient to re-identify an individual.
 
 \subsection{Reflexivity and positionality statement} 
-This research was carried out by researchers based in the UK, and led by YY. Whilst YY has lived in various high-income settings around the world, including New Zealand, the United States, and Israel, they also have high levels of experience working with scientific data and running open-focused equity-driven global scientific communities. Most recently, this includes working with \textit{OLS} (Formerly Open Life Science), and open science mentoring and training organisation, as well as software engineering and data manipulation experience at \textit{InterMine}, an open source biological data warehouse. 
+This research was carried out by researchers based in the United Kingdom, and led by YY. Whilst YY has lived in various high-income settings around the world, including New Zealand, the United States, and Israel, they also have high levels of experience working with scientific data and running open-focused equity-driven global scientific communities. Most recently, this includes working with \textit{OLS} (Formerly Open Life Science), an open science mentoring and training organisation, as well as software engineering and data manipulation experience at \textit{InterMine}, an open source biological data warehouse. 
 
-In particular, we recognise that the study was designed to focus on \textit{open} data, by a researcher who advocates for and prefers to work with open data whenever possible and ethically prurient. Importantly, we do not assert that this should be taken as a comprehensive or balanced review of data access mechanisms - instead, this study specifically investigates \textit{barriers}, and how people handle them. 
+In particular, we recognise that the study was designed to focus on \textit{open} data, by a researcher who advocates for and prefers to work with open data whenever possible and ethically prurient. Importantly, we do not assert that this should be taken as a comprehensive or balanced review of data access mechanisms - instead, this study specifically investigates \textit{barriers}, and how professionals may handle them. 
 
 In the sample section, we also discuss limitations of the sample and recruitment method - as noted above, our communities are open-focused and equity-focused, which is likely reflected in the sample we were able to reach for interview. 
 
@@ -210,7 +214,7 @@ Round two recruitment was more directly targeted towards individuals, and result
 
 Tables 1 to 3 show profiles of the participants. These results are intentionally dis-aggregated to present a profile of participants without linking the data in a way that might facilitate de-anonymisation.
 
-\begin{table}[h!]
+\begin{table}[ht!]
   \begin{center}
     \caption{Participant location}
     \label{tab:locations}
@@ -235,7 +239,7 @@ Tables 1 to 3 show profiles of the participants. These results are intentionally
 
 Participants came from a broad range of overlapping professions and expertise domains, shown in \textit{Table 2} below.  The number of participants adds up to greater than fifteen due to some participants falling into more than one category.  
 
-\begin{table}[h!]
+\begin{table}[ht!]
   \begin{center}
     \caption{Participant domain expertise}
     \label{tab:professions}
@@ -298,7 +302,16 @@ We neither targeted nor disqualified participants based on their experience with
 
 \subsubsection{Data types: profile of data types discussed by participants}
 
-Figure \ref{fig:fig-datatypes} illustrates the spectrum of private and non-private data discussed in this study. The study was initially designed in response to barriers the authors had encountered around non-private data: viral genome and COVID-19 spread information. In the course of the interviews, the scope of data expanded to cover additional data types: 
+Figure \ref{fig:fig-datatypes} illustrates the spectrum of private and non-private data discussed in this study. The study was initially designed in response to barriers the authors had encountered around non-private data: viral genome and COVID-19 spread information. 
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/figure-datatypes.png}
+    \caption{Data types in the study covered a spectrum ranging from highly personal and private, to data that would not threaten personal privacy if shared}
+    \label{fig:fig-datatypes}
+\end{figure}
+
+In the course of the interviews, the scope of data expanded to cover additional data types: 
 
 \textbf{Non-private, but potentially commercial and/or political:}
 \begin{itemize}
@@ -315,13 +328,6 @@ Figure \ref{fig:fig-datatypes} illustrates the spectrum of private and non-priva
 \item Synthetic data designed to resemble real private data.
 \item Metadata and data structures for private data, without the private data itself. 
 \end{itemize}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=1\linewidth]{figures/figure-datatypes.png}
-    \caption{Data types in the survey covered a spectrum ranging from highly personal and private, to data that does not have ethical reasons to keep out of public view}
-    \label{fig:fig-datatypes}
-\end{figure}
 
 Viral sequences are potentially commercial if sequenced by organisations that wish to exploit the sequence for commercial gain, and can be political as well. More than one participant noted that there were viral sequences from Wuhan, where the pandemic originated, that later disappeared from the servers they were on. 
 
@@ -571,7 +577,8 @@ Another participant comments on trying to encourage their colleagues to produce 
 
 \subsubsection{Barriers: A summary}
 
-\begin{table}
+Table 4 concisely presents key points from each of the five barrier types. 
+\begin{table}[h!]
     \centering
     \begin{tabular}{ | l | l| }
        \hline
@@ -721,7 +728,7 @@ Another participant notes that digitisation of government services has improved 
 
 \subsection{Risks and Ethics in COVID-19 data sharing }
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=1\linewidth]{figures/figure-ethics.png}
     \caption{Primary ethical concerns from participants ranged from under-sharing life-saving data, up to over-sharing data that \textit{should} have remained private}
@@ -772,7 +779,7 @@ A careful implementation of this technique could be immensely powerful, enabling
 
 \section{Conclusion and future work}
 
-\begin{figure}
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=1\linewidth]{figures/figure-barriers.png}
     \caption{Barriers 1 through 5 are sequential, and all are cumulative. 1: Knowing data exists; 2: Access to data; 3: Utility of the data; 4: Further distribution. Barrier 5 underpins the other four: Human throughput}
