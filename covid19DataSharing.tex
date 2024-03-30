@@ -80,15 +80,15 @@ Preventing the spread of a global pandemic requires effective, swift access to h
 \section{Introduction}
 Barriers to effective use of data to inform policy are not new, but became noteworthy during a global pandemic that has already infected hundreds of millions (\cite{owidcoronavirus}). Building on data-sharing challenges we encountered as scientists practicing in our own fields, we designed a qualitative remote interview-based study to investigate these barriers. 
 
-After exploring literature (section 3), we present methods (section 4), and in then share a comprehensive list of the consecutive systemic barriers our participants encountered when working to address the effects of the pandemic (section 5). This list is presented with intent to inform policy and create effective sharing mechanisms before another such deadly event occurs. 
+After exploring literature (section 3), we present methods (section 4), and then share a comprehensive list of the consecutive systemic barriers our participants encountered when working to address the effects of the pandemic (section 5). This list is presented to inform policy and create effective sharing mechanisms before another such deadly event occurs. 
 
-Whilst this research was intended specifically to look at non-private data, such as hospital bed capacity, or viral genomes,  many participants had experience with private data types as well - and it quickly became clear throughout the study that most of the barriers we identified were common to both private and non-private data types.  Much of the evidence we present is in the form of quotes and use-cases of the barriers our participants encountered, and given the sensitivity of topics such as data privacy (section 5.1.2) and governmental data suppression (section 6.1), all participants and quotes are anonymous. 
+Whilst this research was intended specifically to look at non-private data, such as hospital bed capacity, or viral genomes, many participants had experience with private data types as well - and it quickly became clear throughout the study that most of the barriers we identified were common to both private and non-private data types. Much of the evidence we present are quotes and use-cases of the barriers our participants encountered, and given the sensitivity of topics such as data privacy (section 5.1.2) and governmental data suppression (section 6.1), all participants and quotes are anonymous. 
 
 The barriers reported fall into five main categories, four of which are sequential: Knowing data exists, accessing that data, being able to understand and use the data, and being able to share your data and analyses in an online repository so others can re-use them. Throughout this, a fifth barrier is interwoven: Human throughput capacity, which may be stretched even before acute stress periods such as a pandemic.
 
 This study focused specifically on recruiting people who wish to share barriers that they had encountered. Whilst it is not the primary focus of the study, we also discuss common themes and "wishlist" items that our participants shared, when describing what a good - or even "dream" data source might look like (section 5.3).
 
-In the discussion (section 6), we highlight three key areas of note. These are: the governmental tension between following science and controlling pandemic narrative; equity concerns as those with the least resilience are also the worst affected; and the need for structured computationally-readable temporal metadata for legal rulings such as COVID social distancing requirements. 
+In the discussion (section 6), we highlight three key areas of note: the governmental tension between following science and controlling pandemic narrative; equity concerns as those with the least resilience are also the worst affected; and the need for structured computationally-readable temporal metadata for legal rulings such as COVID social distancing requirements. 
 
 Finally, we conclude the paper with a short summary and call to action (section 7). 
 
@@ -107,11 +107,13 @@ Throughout this paper we do not dispute that individuals have a right to confide
 
 \cite{Leslie_McSwain} observe that pandemic-related health data sharing presents a specific urgency: \enquote{In an emergency setting, we need to drastically reduce the barriers to frictionless [Health Information Exchange]: one law of the land for COVID-19–related data.} They further propose to ease common anonymisation measures in the face of pandemic need, such as reducing the threshold of "anonymous" geographical location blocks from 20,000 people to a smaller range of 50 to 100 individuals. 
 
-\cite{henderson_patient_2021} notes that the right to individual privacy in epidemics could reasonably be abrogated to provide better population-level epidemic response, much like right to free movement is restricted during lockdowns, but eventually concludes that the benefits are not likely to outweigh the risks, given that these datasets are not likely to be representative and bias free, and risk being exploited by commercial entities.
+\cite{henderson_patient_2021} notes that the right to individual privacy in epidemics could reasonably be abrogated to provide better population-level epidemic response, much like right to free movement is restricted during lockdowns, but eventually concludes that the benefits are not likely to outweigh the risks, given that these datasets are not likely to be representative and bias free, and risk being exploited by commercial entities. 
+
+Biomedical data needs to draw from varied sources in order to provide meaningful and timely responses. \cite{leonelli_2023}, highlights that attitudes and expectations around evidence-based medicine resulted changed as a result of pandemic urgency. In previous decades, randomised control trials (RCTs) were more likely to have been used by researchers over all other data sources. Data were often biased to easily digestible or computation-friendly data sources, rather than "complex disaggregated data sources". Leonelli highlights the need for varied and multidisciplinary data sources to create a whole and realistic picture of epidemiology. These sources should include social factors which are likely to influence outcomes and behaviours, linked data (where possible) and data sources from medical professionals and social workers, rather than only from researchers. 
 
 \subsection{Transparency and data sharing in local and national governments}
 
-Effective government inter-organisational data sharing provides expertise, revenue, policy, and efficiency benefits (\cite{gil-garcia_government_2016}, \cite{ramon_gil-garcia_collaborative_2007}). Given the inherent risk and tension around personal privacy vs transparency, it is not surprising that government data sharing policies varies not only from country to country, and local authority to local authority, and even between individual governmental agencies in the same country. Governmental data are often siloed, however clear direction from high-level leadership can ease the silo culture and make inter-agency consensus and collaboration easier (\cite{graham_navigating_2016}). 
+Effective government inter-organisational data sharing provides expertise, revenue, policy, and efficiency benefits (\cite{gil-garcia_government_2016}, \cite{ramon_gil-garcia_collaborative_2007}). Given the inherent risk and tension around personal privacy vs transparency, it is not surprising that government data sharing policies vary not only from country to country, and local authority to local authority, and even between individual governmental agencies in the same country. Governmental data are often siloed, however clear direction from high-level leadership can ease the silo culture and make inter-agency consensus and collaboration easier (\cite{graham_navigating_2016}). 
 
 Governmental administrative data are often limited by practical constraints. \cite{allard_state_2018} list some of these: internal lack of capacity to analyse it; data that is of poor quality that needs significant preparation before it can be analysed, and a lack of common data formats and identifiers. Whilst IT infrastructure and data-management systems are necessary to solve these issues, they are far from the only element needed. Factors that can improve these socio-technical challenges include early intervention when or before data sharing problems arise, favourable political environment and internal policy and active data sharing culture-setting, especially from organisational leadership (\cite{dawes_need_2009}). \cite{gil-garcia_government_2016} finds that both having a project manager dedicated to inter-organisational data sharing and having sufficient financial resources significantly correlated with governmental inter-organisation data sharing success.  \cite{allard_state_2018} further observes that data associated with mandatory compliance reports tends to receive more attention and resource than other data types, and are often of higher quality.
 
@@ -120,7 +122,7 @@ Governmental administrative data are often limited by practical constraints. \ci
 Researchers may be disincentivised from working with governmental agencies due to the time taken to navigate data-access bureaucracy, especially if there is no standardised process to access the data and/or if data access agreements forbid re-sharing data.  
 
 \subsection{Transparency, data sharing, and secondary data re-use in academic settings}
-A sub-set of academic researcher have been pushing for openly shared research data for some time - for example the Bermuda principles for genomic data sharing were established in 1996 (\cite{maxson_jones_bermuda_2018}).
+A sub-set of academic researchers have been pushing for openly shared research data for some time - for example the Bermuda principles for genomic data sharing were established in 1996 (\cite{maxson_jones_bermuda_2018}).
 
 Generally, whilst opinions on research and academic data sharing are favourable, in practice many researchers find that the effort associated with data sharing (i.e. preparing data to be shared and/or metadata that contextualises the raw data) and risks (ethical risks, misinterpretation, risk of scoop, lack of incentive) often outweigh an individual’s reasons to share data (\cite{Yimei_Zhu_Open_access_in_uk}, \cite{datasharing_sociology}). It is thus perhaps unsurprising that in a survey of 1,800 UK-based academics by \cite{Yimei_Zhu_Open_access_in_uk}, 86\% of respondents rated data sharing as "very important" or "fairly important", but only one fifth of the respondents had personal experience of sharing their data. 
 
@@ -163,7 +165,7 @@ Due to the low level of response in round-one, in round-two, we did not focus on
 \subsubsection{Data gathering: interviews}
 Prior to interviews, participants were sent an information sheet via email explaining the purpose of the interviews and how their data would be handled. 
 
-Interviews were semi-structured, conducted remotely via an institutional Zoom video conferencing account. We guided participants through onscreen consent forms  before asking the following questions: 
+Interviews were semi-structured, conducted remotely via an institutional Zoom\cite{zoom_2022} video conferencing account. We guided participants through onscreen consent forms  before asking the following questions: 
 
 \begin{enumerate}
 \item Tell me a little about the data sources you've been working with so far – have any been restrictive or hard to access?
@@ -186,7 +188,7 @@ participating in this study?
 \end{enumerate}
 
 \subsubsection{Data management and analysis}
-Post-interview, recordings of the interviews as well as transcriptions were downloaded from Zoom \cite{zoom_2022}, speech-to-text errors were corrected, and then the text transcriptions were analysed for themes. Transcripts were coded in NVivo 12 \cite{qsr_international_pty_ltd_nvivo_2018}, resulting in 304 codes in total. Of these, we filtered a list of 101 codes that were present three or more times across the fifteen transcript files. A second coder reviewed the filtered list to confirm the presence or absence of codes in each transcript file. 
+Post-interview, recordings of the interviews as well as transcriptions were downloaded from Zoom, speech-to-text errors were corrected, and then the text transcriptions were analysed for themes. Transcripts were coded in NVivo 12 \cite{qsr_international_pty_ltd_nvivo_2018}, resulting in 304 codes in total. Of these, we filtered a list of 101 codes that were present three or more times across the fifteen transcript files. A second coder reviewed the filtered list to confirm the presence or absence of codes in each transcript file. 
 
 Of the 1,515 data points (101 codes * 15 files), both coders agreed for 1,514 of the codes (greater than 99.93\% agreement). After discussion between the coders, agreement was reached on the final code, giving 100\% agreement for all codes present three or more times across the transcripts. 
 
@@ -276,7 +278,7 @@ We also define two categories of data that fall across the privacy spectrum: Com
 
 \textbf{Commercial data} are data that are withheld from the public due to industrial competition and intellectual property reasons. This category spans both private and non-private data above - for example, a for-profit science lab might decline to share a viral genome it has sequenced, considering it proprietary sensitive information (which would be defined in this paper as commercial and non-private), or a health insurance company might consider information it could learn from its health records to be proprietary (which in this paper we would define as both commercial and private data).
 
-\textbf{Political data} are data that may or may not be private, but that a government agency of some kind wishes to hide from the public view. In the case of this study, all data that fell in this category tended to be data that made the pandemic look severe in some way, e.g. very full hospitals, high community / school COVID-19 case loads, or deaths. 
+\textbf{Political data} are data that may or may not be private, but that a government agency of some kind wishes to hide from the public view. In the case of this study, all data that fell in this category tended to be data that made the pandemic look severe in some way, e.g. hospitals over capacity, high community / school COVID-19 case loads, or deaths. 
 
 \paragraph{Data sensitivity: profile of study participants}
 
@@ -369,7 +371,7 @@ We speculate that there may be several possible reasons for the sample distribut
 \subsubsection{Barrier 1. Knowing the data exists, and being able to find it}
 In order to work with or request data, researchers and data analysts must know the data exists. Multiple interview participants talked about their experiences gaining access to non-private data that was neither deposited on a public data repository, nor made use of, nor publicised. Indeed, one participant describes accidentally stumbling onto restricted-access but highly relevant bed capacity data whilst browsing an institute shared data archive: 
 
-\blockquote{It was only on an off-chance in perusing through these documents on a Sunday evening. I was having a chat with my colleague,  and we're both going \enquote{what else exists in this data dump that we could do something useful with?} when we stumbled across [this datasource].}
+\blockquote{It was only on an off-chance in perusing through these documents on a Sunday evening. I was having a chat with my colleague, and we're both going \enquote{what else exists in this data dump that we could do something useful with?} when we stumbled across [this datasource].}
 
 Even if data are made accessible to the public in some way, e.g. by being deposited in a data repository that is not access controlled, discoverability can still be a challenge, as data are usually distributed across a broad range of repositories and may not be designed to facilitate data discovery. Three separate participants reported that they had manually curated lists of data sources on a word processor document because there was nowhere else that effectively collated relevant data sources. Participants share their experiences finding data: 
 
@@ -399,7 +401,7 @@ Cost can range prohibitively from thousands to tens of thousands or more for gov
 
 Mobility data providers in particular varied based on which organisation was providing data. One participant reports:  
 
-\blockquote{I think Three in Ireland shared their data initially for free, and then, after a couple of months, they charged cost for that content, to collect and publish datasets and share this data with the central government. [...] it's not expensive. Low four figures or less, for complete access. Whereas O2 and Telefonica expected, I think, upward of £10,000 pounds for the same data and they offered no discounts [...] they basically said \enquote{look on our website: we haven't changed anything during the pandemic, you've always been able to pay for the this data with ten grand.}}
+\blockquote{I think Three in Ireland shared their data initially for free, and then, after a couple of months, they charged cost for that content, to collect and publish datasets and share this data with the central government. [...] it's not expensive. Low four figures or less, for complete access. Whereas O2 and Telefonica expected, I think, upward of £10,000 pounds for the same data and they offered no discounts [...] they basically said \enquote{look on our website: we haven't changed anything during the pandemic, you've always been able to pay for this data with ten grand.}}
 
 \paragraph{Culture} 
 Two-thirds of participants (ten out of fifteen) referenced culture as a barrier around data sharing and access. Sometimes access control was treated as a default without questioning if the data actually \textit{needs} privacy-preservation measures.  Participants reported this both from an industry angle, where corporations were striving to keep intellectual property secret, as well as from academia, where non-private data were access controlled by default, by placing it on gate-kept institutional servers.
@@ -493,11 +495,11 @@ Geography is not the only area that is enriched by temporal context. When interp
 \paragraph{Inability to integrate or link datasets}
 Sometimes different datasets have the potential to meaningfully answer a question present in the other dataset, but nevertheless cannot be combined. This barrier may be technical - i.e. there is no common unique identifier with which to harmonise records across data sources - or it may be a sociolegal barrier: some licence terms prevent data remixing. One participant illustrates how this can be a challenge.
 
-\blockquote{What I don't want to see happen is to create like a multi tiered system or a system where data is not centralized, because that's the nightmare of bioinformatician, where you have to go to some private database for these sequences, and then you go to the Genbank for these sequences and then cross referencing them, where are they duplicated...}
+\blockquote{What I don't want to see happen is to create like a multi tiered system or a system where data is not centralized, because that's the nightmare of bioinformaticians, where you have to go to some private database for these sequences, and then you go to the Genbank for these sequences and then cross referencing them, where are they duplicated...}
 
 \paragraph{Data may not be designed for computational analyses}
 
-Participants reported accessing data as Excel "data dumps" - potentially hundreds of sheets that must be laboriously manually downloaded by a human, or as PDFs, which are not easily read by a computational script. Other participants reported having to copy/paste data from web pages on a daily basis and re-typing data embedded in graphics. When data are not designed to allow programmatic access (e.g. via an Application Programming Interface, API), fetching data and slicing it into the correct sub-sets of data (for example, fetching only hospitalised patients over a certain age), becomes difficult or impossible. 
+Participants reported accessing data as Excel "data dumps" - potentially hundreds of sheets that must be laboriously manually downloaded by a human, or as PDFs, which are not easily read by a computational script. Other participants reported having to copy/paste data from web pages on a daily basis and re-typing data embedded in graphics. When data are not designed to allow programmatic access (e.g. via an API), fetching data and slicing it into the correct sub-sets of data (for example, fetching only hospitalised patients over a certain age), becomes difficult or impossible. 
 
 \paragraph{Technical barriers} 
 Many of the use barriers discussed thus far are a result of data structure design issues, training needs, and human error. Technical infrastructure, especially infrastructure that is suddenly used in unanticipated ways, may present additional barriers - it may not be designed to be accessed externally, e.g. because of use of a data safe haven, or it may not be designed to cope with a heavy load of users. One participant reported that they regularly experienced incomplete / interrupted downloads, potential rate limits, and had little choice but to script repeated attempts until a full data download was completed. 
@@ -514,16 +516,16 @@ Given the rife data quality and usability issues, it is perhaps unsurprising tha
 
 \subsubsection{Barrier 4: Further distribution: Barriers to re-sharing data and analyses}
 
-Once a researcher overcomes the barriers in finding data, accessing it, and preparing it for use, they may face difficulty disseminating the analyses they have created - perhaps due to data use agreements that prohibit re-sharing data, or permit re-sharing of analyses and derived numbers, or simply  require pre-approval before analyses are shared. 
+Once a researcher overcomes the barriers in finding data, accessing it, and preparing it for use, they may face difficulty disseminating the analyses they have created - perhaps due to data use agreements that prohibit re-sharing data, or permit re-sharing of analyses and derived numbers, or simply require pre-approval before analyses are shared. 
 
 \paragraph{"Open" data, but no sharing onwards}
 
 Restrictive data sources may disallow any redistribution of their data, which can result in analyses being impossible to reproduce or researchers simply abandoning the datasource entirely in favour of less restrictive data sources. Participants weigh in on data sources with strict or prohibitive re-use policies: 
 
- Two participants weigh in on GISAID, a viral genome sequence database: 
+Two participants weigh in on GISAID, a viral genome sequence database: 
 \blockquote{The GISAID database which is containing the SARS-CoV-2 sequences is blocked off, and it's kind of not worth the hassle to use that data, even though it might be informative, because if we use it we then can't share our data, which is a derivative.}
 
-\blockquote{One of the things we care about, is not sharing \textit{just} the data itself, but also all the code and scripts and stuff that we use to analyze the data and produce the final output. But for the parts where we're building trees to compare the final genetics of our isolates versus the world's, we can't actually bundle that data together. The GISAID data that is used as the context is not distributable, and so that's that's where there's kind of this gap between our ideal of being able to to provide everything bundled together. }
+\blockquote{One of the things we care about, is not sharing \textit{just} the data itself, but also all the code and scripts and stuff that we use to analyze the data and produce the final output. But for the parts where we're building trees to compare the final genetics of our isolates versus the world's, we can't actually bundle that data together. The GISAID data that is used as the context is not distributable, and so that's where there's kind of this gap between our ideal of being able to to provide everything bundled together.}
 
 \paragraph{Re-sharing only approved items}
 Other data sources may require that they pre-approve all published items that use their data in some way:
@@ -539,10 +541,10 @@ Two participants talk about getting permission to share analyses of data that we
 \blockquote{I think they've managed to publish a few papers, but they're always kind of outdated because it takes so long for [governmental body] to say yes. And they weren't allowed to preprint them, so I know that that has been quite frustrating and would have been actually really important data to help shape how people talk about COVID-19 and adherence.}
 
 \paragraph{Data integration results in redistribution challenges}
-A recurring theme researchers reported was mixed-permissions datasets are hard to re-share. Data users are forced to choose whether to ignore restrictive datasets entirely, and use only open-permissioned datasets, or to integrate richer restricted data sets but have difficulty distributing their work. Mixed-permission data sets can either be redistributed with gaps, sharing only the open elements and making their research non-reproducible, or alternatively, data distributors may invest in time- and resource-heavy multi-tier access systems. 
+A recurring theme researchers reported was mixed-permissions datasets are hard to re-share. Data users are forced to choose whether to ignore restrictive datasets entirely, and use only open-permissioned datasets, or to integrate richer restricted datasets but have difficulty distributing their work. Mixed-permission datasets can either be redistributed with gaps, sharing only the open elements and making their research non-reproducible, or alternatively, data distributors may invest in time- and resource-heavy multi-tier access systems. 
 
 \paragraph{Sharing may be blocked due to data quality concerns}
-Whilst ensuring quality is unarguably important, over-strict rules can prevent even good quality data for being shared onwards.  One participant reports that despite their data being suitable for BLAST, a popular computational biology analysis tool, their re-shared data was deemed "third-party" (i.e. less trustworthy), and wasn't stored in a way that permitted BLAST analysis: 
+Whilst ensuring quality is unarguably important, over-strict rules can prevent even good quality data for being shared onwards. One participant reports that despite their data being suitable for BLAST, a popular computational biology analysis tool, their re-shared data was deemed "third-party" (i.e. less trustworthy), and wasn't stored in a way that permitted BLAST analysis: 
 
 \blockquote{A bit of a snag with [a genomic sequence database]. [The database] was like \enquote{Oh, we'll take the sequences, but then they're going to be classified as third party assemblies}, which means that they're not BLASTable, they're not really essentially useful in any real way. And so now I need to try to convince [the database] that \enquote{no, these are viral genomes} - they might not be complete in every case, but these are very distinct viruses and there is no representation in [the database].}
 
@@ -578,7 +580,7 @@ Another participant comments on trying to encourage their colleagues to produce 
 \subsubsection{Barriers: A summary}
 
 Table 4 concisely presents key points from each of the five barrier types. 
-\begin{table}[h!]
+\begin{table}[ht!]
     \centering
     \begin{tabular}{ | l | l| }
        \hline
@@ -635,7 +637,7 @@ Table 4 concisely presents key points from each of the five barrier types.
 \end{table}
 
 \subsection{Good experiences and "dream" data sources}
-Whilst presenting the many consecutive barriers to effective data sharing in a pandemic can appear bleak, there were also beacons of light. Participants described both specific datasets and aspects of existing data sources that worked well, as well as suggesting "dream" or "wishlist" items that may not have all existed, or at least not all in a single place, but that participants considered desirable aspects of a high-quality data source. Here, we will describe the attributes that participants valued,  and when there are no anonymity concerns, we will provide the example dataset names that illustrate a given point. 
+Whilst presenting the many consecutive barriers to effective data sharing in a pandemic can appear bleak, there were also beacons of light. Participants described both specific datasets and aspects of existing data sources that worked well, as well as suggesting "dream" or "wishlist" items that may not have all existed, or at least not all in a single place, but that participants considered desirable aspects of a high-quality data source. Here, we will describe the attributes that participants valued, and when there are no anonymity concerns, we will provide the example dataset names that illustrate a given point. 
 
 Both the wishlist and the examples of existing good data sources covered areas that addressed barrier 1 (knowing data exists), barrier 2 (accessing data), and barrier 3 (hard-to-use data). No wishlist items or good examples specifically addressed barrier 4 (re-sharing data) or barrier 5 (human throughput). 
 
@@ -664,12 +666,12 @@ Participants wished frequently for data that was integrated - creating a scenari
 
 One participant cited two projects, PIONEER and DECOVID, that attempt to integrate data in this way, and explain how useful this could be in UK-based medical scenarios. More info on these datasets is available via \cite{pioneer}
 
-\blockquote{Trying to bring together two complete electronic health record data sets in OMOP [an electronic health record data standard] is a non trivial task, I don't know of anyone that had actually done it prior. [...] What it's attempting to do is to create an end to end the solution, where from the moment you interact with acute services, to when you end up in critical care, to your discharge [...] every person that interacts through the NHS 111 [National Health Service health advice hotline] but then went to A\&E and ended up in critical care, then got discharged - and being able to match it to ONS [Office of National Statistics] outcomes, so that you know, actually, who died, not just the partial observation that we get in medical records - that would be the dream, but I think that's everyone's dream.}
+\blockquote{Trying to bring together two complete electronic health record data sets in OMOP [an electronic health record data standard] is a non trivial task, I don't know of anyone that had actually done it prior. [...] It's attempting to [...] create an end to end the solution, where from the moment you interact with acute services, to when you end up in critical care, to your discharge [...] every person that interacts through the NHS 111 [National Health Service health advice hotline] but then went to A\&E [Accident and Emergency Department] and ended up in critical care, then got discharged - and being able to match it to ONS [Office of National Statistics] outcomes, so that you know, actually, who died, not just the partial observation that we get in medical records - that would be the dream, but I think that's everyone's dream.}
 
 \paragraph{Computational data access and "big data"}
- Large datasets can be hard to download - both challenging in terms of time and in terms of data storage. \textbf{Mirroring large datasets online} in multiple places may allow a data user to do their processing work entirely "in the cloud" - bringing the computational analysis to the data, rather than bringing the data to a local machine: 
+Large datasets can be hard to download - both challenging in terms of time and in terms of data storage. \textbf{Mirroring large datasets online} in multiple places may allow a data user to do their processing work entirely "in the cloud" - bringing the computational analysis to the data, rather than bringing the data to a local machine: 
 
-\blockquote{A good example for me in terms of data sets - the Thousand Genomes data set is a really nice one because the data is completely open.  We now have high-quality versions of that data set that we can host on cloud [...] one of the nice aspects is you can find mirrors on various platforms, so that regardless of what infrastructure you're using, it's usually easy to access it and not have to do a lot of work to get a copy, because as these data sets get bigger and bigger you really start running into limitations of how reasonable, how feasible, it is to actually get a copy for yourself.}
+\blockquote{A good example for me in terms of datasets - the Thousand Genomes data set is a really nice one because the data is completely open.  We now have high-quality versions of that dataset that we can host on cloud [...] one of the nice aspects is you can find mirrors on various platforms, so that regardless of what infrastructure you're using, it's usually easy to access it and not have to do a lot of work to get a copy, because as these data sets get bigger and bigger you really start running into limitations of how reasonable, how feasible, it is to actually get a copy for yourself.}
 
 \textbf{Programmatic access to data} - that is, making it easy for a computer script to access the data without any human intervention needed - was cited as a key attribute of Genbank and RefSeq: 
 
@@ -700,7 +702,7 @@ A wish for trustworthy data sources was another aspect that mirrored the frustra
 
 \textbf{Third-party data annotation:} One way to facilitate data trustworthiness is by allowing data users to share their knowledge and experience using a given data source - such as by creating machine-readable third-party annotation options for data sets: 
 
-\blockquote{I think annotations of data sets are missing [...] third party annotations need to increase here. [...] \enquote{We figured out that these hundred accession numbers are [incorrect] - the quality is not suitable for downstream experiments}, \enquote{I have my doubts that this is actually COVID-19} - these kind of things.}
+\blockquote{I think annotations of datasets are missing [...] third party annotations need to increase here. [...] \enquote{We figured out that these hundred accession numbers are [incorrect] - the quality is not suitable for downstream experiments}, \enquote{I have my doubts that this is actually COVID-19} - these kind of things.}
 
 \textbf{Knowing what biases may exist in your dataset} - One participant wishes for machine-readable bias metadata for datasets: 
 
@@ -724,7 +726,7 @@ One participant describes taking a year to analyse and clean a clinical data set
 
 Another participant notes that digitisation of government services has improved in response to the pandemic: 
 
-\blockquote{The digitalisation of government services, has been a long and overdue agenda here in [our region]. We say all governments to some degree, managed to improve at least a bit, the way they engage online because of the pandemic.}
+\blockquote{The digitalisation of government services has been a long and overdue agenda here in [our region]. We say all governments to some degree, managed to improve at least a bit, the way they engage online because of the pandemic.}
 
 \subsection{Risks and Ethics in COVID-19 data sharing }
 
@@ -737,7 +739,7 @@ Another participant notes that digitisation of government services has improved 
 
 We asked interview participants whether they had any ethical issues they wished to highlight. We do not report in detail on this section, as in most cases, there was little additional content that had not been highlighted in previous sections of the interview, such as the ethical imperative to share information smoothly in order to reduce the impact of pandemic waves. The need to share was occasionally balanced by the experience of participants who'd been allowed access to patient data so swiftly they doubted that appropriate consent had been sought or granted. We view this range of concerns as a spectrum, shown in Figure \ref{fig:fig-ethics} with a difficult-to-find "sweet spot" in the middle, where data are shared in a manner that allows use without breaching ethical and privacy concerns.
 
-Equity was also raised as a worry; one participant from a high income region noted that they wanted to deal equitably with lower resource settings, but were unsure how to best do this without being patronising, colonialist, or extractive. On the other hand, participants from lower-resource settings did not raise extractivism and colonialism  as concerns at all. One participant from a lower-resource setting expressly wished that people from a higher-income setting would treat low-resource setting generated research data as valuable, useful, and something to learn from. We note that these are individual points of view, and unlikely to be highly representative of others in similar settings. 
+Equity was also raised as a worry; one participant from a high income region noted that they wanted to deal equitably with lower resource settings, but were unsure how to best do this without being patronising, colonialist, or extractive. On the other hand, participants from lower-resource settings did not raise extractivism and colonialism as concerns at all. One participant from a lower-resource setting expressly wished that people from a higher-income setting would treat low-resource setting generated research data as valuable, useful, and something to learn from. We note that these are individual points of view, and unlikely to be highly representative of others in similar settings. 
 
 \section{Discussion}
 
@@ -761,7 +763,7 @@ As long as short-term political reputation is prioritised over transparency, gov
 
 \subsection{A more severe crisis for those who have the least: Equity in pandemic data and pandemic response}
 
-The COVID-19 pandemic has also magnified inequity amongst the most disadvantaged (\cite{alon_gender_inequality_2020}, \cite{pilecco_racial_inequality_2020}).  Multiple participants highlighted that datasets may not equitably represent populations (biased data), and/or may not have sufficient data to be able to tell if different populations are experiencing equitable outcomes (potentially biased data, with no easy way to tell if the bias is present or not). This once again underscores the importance of this study's recurring theme of needing contextual data and metadata around pandemic data, such as socioeconomic status, gender, race/ethnicity, etc. when designing human-centric systems for epidemic and healthcare data. 
+The COVID-19 pandemic has also magnified inequity amongst the most disadvantaged (\cite{alon_gender_inequality_2020}, \cite{pilecco_racial_inequality_2020}). Multiple participants highlighted that datasets may not equitably represent populations (biased data), and/or may not have sufficient data to be able to tell if different populations are experiencing equitable outcomes (potentially biased data, with no easy way to tell if the bias is present or not). This once again underscores the importance of this study's recurring theme of needing contextual data and metadata around pandemic data, such as socioeconomic status, gender, race/ethnicity, etc. when designing human-centric systems for epidemic and healthcare data. 
 
 Participants in the study reported that open data - even if lower quality - is more valuable to them than data that had restrictions on access, use, or re-sharing. \cite{chen_ethical_ml_2021} highlighted that opportunistic use of non-representative data often serve to exaggerate and reinforce equity biases in data. Whilst some participants in the study were well aware that such "convenience sampling" may result in biases, they had relatively little control to improve this in any way, as the other choice would be not to perform their analysis at all. 
 
@@ -789,7 +791,7 @@ A careful implementation of this technique could be immensely powerful, enabling
 Whilst reducing the barriers discussed here would likely make future pandemic responses more effective, the COVID-19 pandemic highlighted issues that already existed. By and large, it seems unlikely that creating more robust data sharing systems, computer-readable legal codes, 
 The barriers we discussed throughout this paper are known and supported by existing data sharing and data standards literature and calls for reform, this paper highlights specifically how they apply to the specific crises of pandemics and epidemics. In particular, the need for machine-readable temporal context for legal movement restrictions and geographical data files represents a new and meaningful contribution to existing knowledge. Similarly, it is important to draw attention to the fact that data are still hidden for the sake of political gain, even in a global and long-term humanitarian crisis. 
 
-\textbf{Figure \ref{fig:fig-barriers} }shows a summary of the barrier types and their sequential and cumulative nature over the lifeceycle of a research project. 
+\textbf{Figure \ref{fig:fig-barriers} }shows a summary of the barrier types and their sequential and cumulative nature over the life cycle of a research project. 
 
 \subsection{Planning for better responses in the future}
 A famous adage about investing in the future is that the best time to plant a tree is twenty years ago; the second-best time is now. Many of the barriers participants reported might have been mitigated or reduced, had measures around data sharing and data access been implemented \textit{before} a public health crisis put significant pressure on our existing healthcare, health surveillance, and research systems. Whilst we can not collectively go back and put better data sharing systems in place, we can use the lessons from this pandemic to prepare better for future waves and for other similar crises. 
@@ -830,28 +832,28 @@ The research was approved by the University of Manchester and meets all ethical 
 Y.Y. designed the study, gathered and analysed the data, wrote the first draft, and approved the final version of the manuscript. L.H.N. analysed the data and approved the final version of the manuscript. C.J and C.G. supervised ideation, study design, revised the manuscript and approved the final version. 
 
 \paragraph{Supplementary Material}
-State whether any supplementary material intended for publication has been provided with the submission.
+All quotes have been included as a supplementary file, listed in the order shown in this text.
 
 \bibliographystyle{unsrtnat}
-% \bibliography{references}
+\bibliography{references}
 
 
-\IfFileExists{./covid19DataSharing.bbl}{
-  \input{document.bbl}
-  %
-  % manually balance the columns on the final page by increasing right column, due to phantom bibliography preventing automatic balancing
-  \atColsEnd{\vskip-455pt}
-  % force dependency detection within the submission system to find "references.bib", s.t. usebib can find it
-  \suppress%
-  \begingroup%
-  % do not create another section; from http://tex.stackexchange.com/a/22654
-  \renewcommand{\section}[2]{}%
-  \bibliography{references}
-  \endgroup%
-  \endsuppress%
-}{
-  \bibliography{references}
-}
+% \IfFileExists{./covid19DataSharing.bbl}{
+%   \input{document.bbl}
+%   %
+%   % manually balance the columns on the final page by increasing right column, due to phantom bibliography preventing automatic balancing
+%   \atColsEnd{\vskip-455pt}
+%   % force dependency detection within the submission system to find "references.bib", s.t. usebib can find it
+%   \suppress%
+%   \begingroup%
+%   % do not create another section; from http://tex.stackexchange.com/a/22654
+%   \renewcommand{\section}[2]{}%
+%   \bibliography{references}
+%   \endgroup%
+%   \endsuppress%
+% }{
+%   \bibliography{references}
+% }
 
 %TC:endignore
 \end{Backmatter}
